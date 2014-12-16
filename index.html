@@ -1,21 +1,15 @@
 <!DOCTYPE html>
 <html>
-
     <head>
         <title>Only see what you want to see</title>
         <link rel="stylesheet" type="text/css" href="main.css">
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <script type="text/javascript">
-            window.onload = function addVideo(){    
-            if ( window.screen.availWidth > "700" ) {
-                document.getElementById("video").innerHTML = "<div><video autoplay loop preload='auto'><source src='Home.mp4'></video></div>";
-            }
-            }
-</script>
+        <script type="text/javascript" src="http://www.thomasjwpayne.com/tjwp/wp-content/themes/tjwp_v2/js/scrollto/jquery-1.6.1.min.js"></script>
+        <script type="text/javascript" src="main.js"></script>
 </head>
 
 <body>
-    <div>
+    <div class="slide-container">
         <div id="video"></div>
         <!--<div>
             <video autoplay loop preload="auto">
@@ -23,17 +17,15 @@
             </video>
         </div>-->
 
-        <label class="toright">
-            <span></span><br/>
-            <span></span><br/>
-            <span></span><br/>
-        </label>
-
-        <label class="toright">
+        <div class="toright">
             <button class="button marg">App Store</button><br/>
             <button class="button marg">Google Play</button>
-        </label>
+        </div>
+    </div>
 
+    <div class="slide-container">
+        <div class="row">About You</div>
+        <div class="row">About Me</div>
         <div class="foot">&copy;newsi.care All Rights Reserved 沪ICP备89999123号-2</div>
     </div>
 </body>

@@ -1,6 +1,7 @@
 body {
 padding:0;
 margin:0;
+height:100%;
 background-image:url("bridge.jpg");
 }
 span {
@@ -13,17 +14,26 @@ video {
   width:100%;
   height:auto;
 }
-.contain {
-background-color: #73bdc0;
+.slide-container {
+    height:100%;
+}
+.row {
 }
 .toright {
 position:relative;
 left:2%;
 top:15em;
 }
-
 .marg {
 margin-top:0.3em;
+}
+.icon {
+width:2em;
+height:2em;
+border-radius:2em;
+background-color:yellow;
+margin-left:12em;
+z-index:2;
 }
 .foot{
   position:fixed;
