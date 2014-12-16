@@ -1,20 +1,27 @@
 <!DOCTYPE html>
 <html>
 
-<head>
-    <title>Only see what you want to see</title>
-    <link rel="stylesheet" type="text/css" href="main.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <head>
+        <title>Only see what you want to see</title>
+        <link rel="stylesheet" type="text/css" href="main.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <script type="text/javascript">
+            window.onload = function addVideo(){    
+            if ( window.screen.availWidth > "700" ) {
+                document.getElementById("video").innerHTML = "<div><video autoplay loop preload='auto'><source src='Home.mp4'></video></div>";
+            }
+            }
+</script>
 </head>
 
 <body>
     <div>
-        <div>
+        <div id="video"></div>
+        <!--<div>
             <video autoplay loop preload="auto">
-                <!--<source src="http://s3.amazonaws.com/cloudways-website-videos/Home.mp4">-->
-                <source src="Home.mp4">
+            <source src="Home.mp4">
             </video>
-        </div>
+        </div>-->
 
         <label class="toright">
             <span></span><br/>
