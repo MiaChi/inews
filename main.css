@@ -1,7 +1,7 @@
 body {
 padding:0;
 margin:0;
-background-image:url("bridge.jpg");
+background-color:#f1eae4;
 }
 span {
 font-family:DFKai-SB,Arial,Helvetica,sans-serif;
@@ -16,22 +16,27 @@ video {
 .slide-container {
     height:1036px;;
 }
+.back-pic {
+    background-image:url("boat.jpg");
+    height:100%;
+    width:auto;
+    overflow:hide;
+}
 .placeholder_you {
-    position:absolute;
-    top:1036px;
-    height:500px;
+    height:50%;
     width:100%;
-    background-color:blue;
+    background-image:url("hmh.jpg");
+    background-repeat:no-repeat;
+    background-position:left;
 }
 .placeholder_me {
-    position:absolute;
-    top:1536px;
-    height:536px;
+    height:50%;
     width:100%;
-    background-color:yellow;
+    background-image:url("cmx.jpg");
+    background-repeat:no-repeat;
+    background-position:left;
 }
 .toright {
-position:relative;
 left:2%;
 top:15em;
 }
@@ -64,12 +69,12 @@ z-index:2;
     width:20em;
 	background: -moz-linear-gradient(
 		top,
-		#50b1fa 0%,
-		#8ab2cc);
+		#afe9e3 0%,
+		#cadddb);
 	background: -webkit-gradient(
 		linear, left top, left bottom,
-		from(#50b1fa),
-		to(#8ab2cc));
+		from(#afe9e3),
+		to(#cadddb));
 	-moz-border-radius: 10px;
 	-webkit-border-radius: 10px;
 	border-radius: 10px;

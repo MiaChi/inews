@@ -1,8 +1,9 @@
-window.onload = function addVideo(){
+/*window.onload = function addVideo(){
     if ( window.screen.availWidth > 700 ) {
         document.getElementById("video").innerHTML = "<video autoplay loop preload='auto'><source src='Home.mp4'></video>";
     }
 }
+*/
 $(document).ready(function() {
 
         // get initial nav height
@@ -28,7 +29,7 @@ $(document).ready(function() {
                 $next.scrollTo($next.attr('id'));
                 $('body').data( 'current-slide', $next );
                 } else {
-                $('div.vi:first').scrollTo($('div.slide-container:first').attr('id'));
+                $('div.back-pic:first').scrollTo($('div.slide-container:first').attr('id'));
                 $('body').data( 'current-slide', $('div.slide-container:first'));
                 }
                 /*$(".slide a").click(function(e) {
