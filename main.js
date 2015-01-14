@@ -38,3 +38,10 @@ $(document).ready(function() {
                 })
 
 });
+function sendToMe() {
+        var xhr = new XMLHttpRequest();
+        var url = "";
+        var id = document.getElementByClassName("mail");
+        xhr.open(GET,url+"?id");
+        xhr.send();
+}
